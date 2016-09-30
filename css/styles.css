@@ -120,6 +120,35 @@ body {
 
 /* end home page */
 
+/* Menu categories page */
+
+.category-title {
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-title span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	opacity: .8;
+}
+.category-title:hover {
+	box-shadow: 0 1px 5px 1px #ccc;
+}
+#menu-categories-title + div {
+	margin-bottom: 50px;
+}
+
+/* menu categories page END*/
 
 /* FOOTER */
 .panel-footer {
@@ -151,9 +180,7 @@ body {
 #testemonials p:nth-child(2) {
 	margin-top: 25px;
 }
-div.text-center {
-	margin-top: 200px;
-}
+
 @media (min-width: 1200px){
 	.container .jumbotron {
 		background: url('../images/jumbotron_1200.jpg') no-repeat;
@@ -256,5 +283,13 @@ div.text-center {
 	.navbar-brand h1 {
 		padding-top: 5px;
 		font-size: 6vw;
+	}
+	.col-xxs-12 {
+		position: relative;
+	  	min-height: 1px;
+	  	padding-right: 15px;
+	  	padding-left: 15px;
+	  	float: left;
+	  	width: 100%;
 	}
 }
